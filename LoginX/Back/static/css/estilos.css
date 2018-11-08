@@ -1,0 +1,513 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Código que indica las caracteristicas del contenedor, tamaño máximo y aplica flexbox para hacerlo responsive*/
+.contenedor {
+	background: #fff;
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+/*Color de Fondo Predeterminado de la Página*/
+body {
+	background: #fff;
+}
+
+/*Características del Encabezado de la Página*/
+header {
+	background: #75d2b2;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+
+/*Código Para dar las Caracteristicas al Logo de la Página*/
+header .logo {
+	color: #fff;
+	font-size: 30px;
+	margin: auto;
+	padding: 15px;
+}
+
+header .logo img {
+	width: 100%;
+	vertical-align: top;
+}
+
+
+header .logo a {
+	color: #fff;
+	text-decoration: none;
+	line-height: 50px;
+}
+
+/*Características del Menú de la Página*/
+.menu {
+	width: 100%;
+	/* Flexbox */
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+/*Características visuales del Menú de la Página*/
+.menu a {
+	/*Poner el borde de los botones en blanco con border-buttom*/
+	border-bottom: #75d2b2 2px solid;
+	background: #66CDAA;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px;
+
+	/* Flexbox */
+	flex-grow: 1; /*Especifica el numero maximo de items flex que pueden adecuarse en una zona*/
+}
+
+/*Código Para dar las Características al Contenedor del Carrusel*/
+.main {
+	padding-top: 5px;
+	background: #75d2b2;
+	width: 100%;
+}
+
+/*Código para centrar el formulario*/
+form {
+	width: 100%;
+	padding: 5px;
+	padding-left: 5%;
+
+	/*Flexbox*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+/*Código para centrar redes sociales*/
+div .social {
+	margin: auto;
+	background: #75d2b2;
+	padding: 5px;
+	width: 100%;
+	text-align: center;
+}
+
+/*Código Para Cambiar el Cursor las Redes Sociales*/
+.social:hover {
+    cursor:pointer;
+}
+
+/*Código para centrar redes sociales*/
+
+div .links {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+div .links a {
+	flex-grow: 1;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+}
+
+/*Código Para Dar Tamaño y Orden a los Enlaces de las Redes Sociales*/
+.fab {
+	text-align: center;
+	color: #66CDAA;
+	width: 50px;
+    height: 50px;
+	padding: 12px;
+    border-radius: 50%;
+	font-size: 24px;
+	padding-left: 14px;
+}
+
+/*Código Para Dar Tamaño y Orden al Enlace del Correo Eléctronico*/
+.far {
+	text-align: center;
+	color: #66CDAA;
+	width: 50px;
+    height: 50px;
+	padding: 17px;
+	border-radius: 50%;
+	font-size: 20px;
+	padding-left: 16px;
+}
+
+/*Códigos Para Dar Tamaño y Orden a las Redes Sociales*/
+.fa-facebook-f {
+	background: #fff;
+	margin: 7px;
+}
+
+.fa-twitter {
+	background: #fff;
+	margin: 7px;
+}
+
+.fa-instagram {
+	background: #fff;
+	margin: 7px;
+}
+
+.fa-envelope {
+	background: #fff;
+	margin: 7px;
+}
+
+/*Contenedor Publicidad Rescate*/
+div .publicidad {
+	width: 100%;
+}
+
+/*Código Para Asignar las Cualidades a las Letras en la Palabra "RESCATE"*/
+div .rescate {
+	width: 100%;
+	background:#fff;
+	color: #111;
+	text-decoration: none;
+	text-align: right;
+	align-items: center;
+	height: 40px;
+	padding-top: 10px;
+	padding-right: 35px;
+	font-size: 20px;
+	font-family: Helvetica Narrow, sans-serif;
+}
+
+/*Código Para Asignar las Cualidades a las Letras en la Palabra "ETAPA UNO"*/
+div .etapa {
+	width: 100%;
+	background: #fff;
+	color: #9a9a9a;
+	text-align: right;
+	align-items: center;
+	height: 25px;
+	padding-right: 35px;
+	font-size: 15px;
+    font-family: Helvetica Narrow, sans-serif;
+}
+
+/*Código Para Asignar las Cualidades a la Línea Ubicada Después de la Palabra "ETAPA UNO"*/
+div .linea {
+	width: 100%;
+	background: #fff;
+	color: #808080;
+	text-align: right;
+	align-items: center;
+	height: 40px;
+	padding-right: 35px;
+	font-size: 15px;
+	font-family: Helvetica Narrow, sans-serif;
+}
+
+/*Código Para Asignar las Cualidades al Primer Parrafo Ubicado Bajo la Primera Línea*/
+div .parrafo1 {
+	width: 100%;
+	background: #fff;
+	color: #808080;
+	text-align: right;
+	padding-right: 35px;
+	padding-left: 10px;
+	align-items: center;
+	height: 40px;
+	font-size: 12px;
+	font-family: Helvetica Narrow, sans-serif;
+}
+
+/*Propiedades Imagén Perro Rescate*/
+div .perro {
+	width: 100%;
+	padding: 40px;
+}
+
+/*Propiedades Para Dejar la Imagén del Perro Responsive*/
+div .perro img {
+	width: 60%;
+	float: right;
+}
+
+/*Propiedades Imagén Perro Rescate*/
+div .crowfunding {
+	width: 60%;
+	padding: 10px;
+}
+
+/*Propiedades Para Dejar la Imagén de crowfunding Responsive*/
+div .crowfunding img {
+	width: 100%;
+	padding-left: 10px;
+}
+
+/*Contenedor Públicidad Crowfunding*/
+div .financiamiento {
+	width: 100%;
+}
+
+/*Código Para Asignar las Cualidades a las Letras en la Palabra "CROWFUNDING"*/
+div .textcrow {
+	width: 100%;
+	background: #fff;
+	color: #111;
+	text-decoration: none;
+	padding-left: 10px;
+	height: 40px;
+	padding-top: 10px;
+	font-size: 20px;
+	font-family: Helvetica Narrow, sans-serif;
+}
+
+/*Código Para Asignar las Cualidades a las Letras en la Palabra "FINANCIAMIENTO"*/
+div .financiamiento {
+	width: 100%;
+	background: #fff;
+	padding-left: 10px;
+	color: #A9A9A9;
+	height: 25px;
+	font-size: 15px;
+	font-family: Helvetica Narrow, sans-serif;
+}
+
+/*Código Para Asignar las Cualidades a la Línea Ubicada Después de la Palabra "FINANCIAMIENTO"*/
+div .linea2 {
+	width: 100%;
+	background: #fff;
+	color: #808080;
+	height: 40px;
+	padding-left: 10px;
+	font-size: 15px;
+	font-family: Helvetica Narrow, sans-serif;
+}
+
+/*Código Para Asignar las Cualidades al Segundo Parrafo Ubicado Bajo la Segunda Línea*/
+div .parrafo2 {
+	width: 100%;
+	background: #fff;
+	color: #808080;
+	height: 70px;
+	padding-left: 10px;
+	padding-right: 30px;
+	font-size: 13px;
+	font-family: Helvetica Narrow, sans-serif;
+}
+
+/*Código Para Dar Tamaño a los Combobox*/
+label, select, .select2-container, .select2-drop {
+	width: 100%;
+	height: 30px;
+	font-size: 15px;
+	color: #4A5D77;
+	padding: 5px;
+	outline: 0;
+
+	/* Flexbox */
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+/*Código Para Definir Tamaño y localización de los textbox*/
+.form_text{
+	width:100%;
+    height: 30px;
+	font-size: 15px;
+	color: #111;
+	outline: 0;
+
+	/* Flexbox */
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+/*Código Para Definir Tamaño y localización del Formulario de Registro*/
+.areaTrabajo {
+	width:100%;
+	align-items:center;
+	margin: auto;
+	height: 340px;
+	font-size: 16px;
+	background:#fff;
+	/* Flexbox */
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+
+/*Titulo Formulario de Registro*/
+.areaTrabajo h1 {
+	width:100%;
+	align-items: center;
+	padding-left: 5%;
+	height: 50px;
+	font-size: 30px;
+	font-family: "Franklin Gothic Medium","Franklin Gothic","ITC Franklin Gothic",Arial,sans-serif;
+	letter-spacing: 1px;
+	color: #66CDAA;
+	/* Flexbox */
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+/*Código Para dar Atributos Texto del Botón*/
+ul {
+	width: 140px;
+	padding: 6px;
+	height: 40px;
+    list-style: none;
+	border: 3px solid #111;
+    color: #111;
+	font-size: 30px solid;
+	font-family: Helvetica Narrow, sans-serif;
+}
+
+
+/*Código Para dar Atributos al Botón*/
+.boton{
+	padding-left: 10px;
+	text-align: center;
+	width: 100%;
+	height: 30px;
+	display: flex;
+}
+/*Código Para dar Atributos al Botón*/
+div .contenedorCollage {
+	width: 100%;
+	display:flex;
+	background: #75d2b2;
+	margin-top: 20px;
+}
+
+/*Código Para Ajustar Caja Izquierda Collage*/
+.cajaIzq {
+	padding :5px;
+    width: 100%;
+}
+
+/*Código Para Ajustar Caja Medio del Collage*/
+.cajaMedio {
+	padding: 5px;
+    width: 100%;
+	height: 60%;
+}
+
+/*Código Para Ajustar Caja Derecha del Collage*/
+.cajaDer {
+	padding: 5px;
+    width: 100%;
+	height: 60%;
+}
+
+/*Código Para dar Atributos a las Imágenes Caja Izquierda*/
+.cajaIzq img {
+	padding: 10px;
+    width: 100%;
+	height: 198px;
+    overflow: hidden;
+	justify-content:space-between;
+	text-align: center;
+}
+
+/*Código Para dar Atributos a las Imágenes Caja Central*/
+.cajaMedio img {
+	padding: 10px;
+    width: 100%;
+	height: 300px;
+	flex-direction: column;
+	justify-content: space-between ;
+}
+
+/*Código Para dar Atributos a las Imágenes Caja Derecha*/
+.cajaDer img {
+	padding: 10px;
+    width: 100%;
+	height: 300px;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/*Código Para dar Efecto de Zoom a las Imágenes*/
+.contenedorCollage img:hover {
+    transform:scale(1.5);
+    transition:all ease 1.5s;
+    cursor:pointer;
+}
+
+/*Código Para Cambiar el Cursor Sobre el Botón*/
+.boton:hover {
+    cursor:pointer;
+}
+
+/*Código Para el Último Texto*/
+div .end {
+	width: 100%;
+	background: #ddd;
+	color: #808080;
+	height: 70px;
+	padding-left: 30px;
+	padding-top: 20px;
+	font-size: 13px;
+	font-family: Helvetica Narrow, sans-serif;
+}
+.loginContenedor{
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: auto;
+	list-style: none;
+	font-family: monospace;
+	text-align: end;
+}
+.btnEnviar{
+	border:none;
+	background: #66CDAA;
+	color:#fff;
+	font-size: 12px;
+	text-align: center;
+	cursor:pointer;
+	padding-top: 10px;
+	display: block;
+	margin:0 auto;
+	margin-top: 10px;
+	padding: 8px 15px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+/*https://www.w3schools.com/cssref/css3_pr_mediaquery.asp*/
+.contenedor {
+	flex-direction: column;
+}
+
+header {
+	flex-direction: column;
+	padding: 0;
+}
+
+header .logo {
+	margin: 20px;
+}
+
+header nav {
+	width: 100%;
+	flex-direction: column;
+}
+
+/*Linea que indicara que se rellenara el espacio completo de los botones del menu*/
+header nav a {
+	width: 100%;
+}

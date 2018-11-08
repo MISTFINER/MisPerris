@@ -1,0 +1,28 @@
+{% extends "maqueta.html" %}
+{% block index %}
+<nav class="menu">
+    <a href="{% url 'index' %}">Inicio</a>
+    <a href="#">Quienes somos</a>
+    <a href="#">Servicios</a>
+    <a href="#">Contáctanos</a>
+</nav>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Agregar usuario</button>
+</form>
+{% if usuarios %}
+<table>
+    <tr>
+        <td>Nombre Usuario</td><td>Nombre Real</td><td>Email</td><td>id</td>
+    </tr>
+    {% for u in usuarios %}
+    <tr>
+        <td>{{u.user.username}}</td><td>{{u.nombre}}</td><td>{{u.user.email}}</td>
+
+    </tr>
+    {% endfor %}
+</table>
+{% endif %}
+<a href="{% url 'logout' %}">Salir</a>
+{% endblock %}

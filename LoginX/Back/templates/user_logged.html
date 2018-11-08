@@ -1,0 +1,18 @@
+{% extends "maqueta.html" %}
+{% block index %}
+<nav class="menu">
+    <a href="{% url 'index' %}">Inicio</a>
+    <a href="#">Quienes somos</a>
+    <a href="#">Servicios</a>
+    <a href="#">Contáctanos</a>
+    <a href="{% url 'logout' %}">Logout</a>
+</nav>
+    {% if user.is_authenticated %}
+    Hi &nbsp {{ user.username }}
+    <br>
+    <p><a href="{% url 'password_reset' %}">Reiniciar contraseña</a></p>
+    {% else %}
+    <p>You are not logged in</p>
+     <a href="{% url 'login' %}">login</a>
+{% endif %}
+{% endblock %}

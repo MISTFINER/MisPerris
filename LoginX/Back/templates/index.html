@@ -1,0 +1,71 @@
+{% extends "maqueta.html" %}
+{% load static%}
+
+
+{% block index%}
+
+<nav class="menu">
+    <a href="#">Quienes somos</a>
+    <a href="#">Servicios</a>
+    <a href="#">Contáctanos</a>
+    <a href="{% url 'login' %}">Inicio sesión</a>
+</nav>
+
+<section class="main">
+<div id="carrusel">
+    <div><img src="{% static 'images/Tom.jpg' %}" title="Estamos felices de tener a tom en casa. Es un super buen compañero"></div>
+    <div><img src="{% static 'images/Apolo.jpg' %}"></div>
+    <div><img src="{% static 'images/Duque.jpg' %}"></div>
+</div>
+<script src="{% static 'js/codigo.js'%}"></script>
+</section>
+
+<div class="social">
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="far fa-envelope"></i>
+</div>
+
+<div class="publicidad">
+    <h1 class="rescate">RESCATE<h1/>
+    <h2 class="etapa">ETAPA UNO<h2/>
+    <h3 class="linea">_____<h3/>
+    <p class="parrafo1">Rescatamos perros en situación de peligro y/o abandono. Los rehabilitamos y los preparamos para buscarles un hogar.<p/>
+</div>
+
+<div class="perro" id="perro">
+    <img src="{% static 'images/rescate.jpg' %}" id="">
+</div>
+
+<div class="crowfunding">
+    <img src="{% static 'images/crowfunding.jpg' %}">
+</div>
+
+<div class="financiamiento">
+    <h1 class="textcrow">CROWFUNDING<h1/>
+    <h2 class="financiamiento">FINANCIAMIENTO<h2/>
+    <h3 class="linea2">_____<h3/>
+    <p class="parrafo2">Sigue nuestras redes sociales para informarte acerca de las diversas campañas y actividades que realizaremos para obtener financiamiento para seguir ayudando.<p/>
+<div class="boton">
+    <ul>
+        <li class="enlace">CAMPAÑAS</li>
+    </ul>
+</div>
+
+<div class="contenedorCollage">
+    <div class="cajaIzq">
+        <img src="{% static 'images/01.jpg' %}" alt="Nueve">
+        <img src="{% static 'images/02.jpg' %}" alt="Nueve">
+        <img src="{% static 'images/03.jpg' %}" alt="Nueve">
+    </div>
+    <div class="cajaMedio">
+        <img src="{% static 'images/04.jpg' %}" alt="Nueve">
+        <img src="{% static 'images/05.png' %}" alt="Nueve">
+    </div>
+    <div class="cajaDer">
+        <img src="{% static 'images/06.jpg' %}" alt="Nueve">
+        <img src="{% static 'images/07.jpg' %}" alt="Nueve">
+    </div>
+</div>
+{% endblock %}
